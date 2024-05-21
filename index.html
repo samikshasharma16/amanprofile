@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MY profile</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> -->
+   
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   
+<style type="text/css">
+
+
+.float-end .navbar-nav a{
+  
+    margin-left: 5px;
+    border: none;
+    
+  }
+.progress-bar{
+    background: rgb(222, 226, 230) !important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#iconlast a i{
+    margin: 20px !important;
+    font-size: 25px;
+    color: white;
+}
+#iconlast a i:hover{
+    transform: scale(2.1,2.1);
+    transition:  1s;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  text-align: left;
+  background-color: #605ab3;
+}
+ 
+a {
+  color: #0BCEAF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #078571;
+  text-decoration: underline;
+}
+ 
+h1,h2,h3,h4,h5,h6,p{
+  color: #020202 !important;
+} 
+
+ 
+/*function*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+section{
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+
+}
+section ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+section ul li{
+  list-style: none;
+  background: rgb(229, 221, 221);
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: black;
+
+}
+section ul li.active{
+  background: rgb(90, 0, 201);
+  color: white !important;
+}
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product .itemBox{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  display: block;
+}
+.product .itemBox.hide{
+  display: none;
+}
+.product .itemBox img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  /* filter: grayscale(100%); */
+
+}
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  transition:all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+.product .itemBox  img:hover{
+  transform: scale(1.2,1.2);
+  filter: none;
+  transition: all ease 1s;
+  z-index:6 !important;
+  box-shadow: 0px 0px 10px 2px #76c5e7;
+
+}
+
+.gallery .controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.gallery .controls .buttons{
+  height:40px;
+  width: 100px;
+  background:#fff;
+  color:#666;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  margin:20px;
+  
+
+
+  box-shadow: 0 3px 5px rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.gallery .controls .buttons.active{
+  background:rgb(136, 5, 134);
+  color:#fff ;
+}
+.gallery{
+
+  background:transparent;
+  padding-bottom: 100px;
+}
+
+.gallery .image-container{
+  
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#image img{
+  height: 90%;
+  width: 70%;
+  padding:-100px !important;
+  margin-top: -30px !important;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* filter: grayscale(100%); */
+  
+}
+#image img:hover{
+  transform: rotateZ(5deg);
+  filter: none;
+
+  transition: all ease .5s;
+}
+
+
+
+/*functio*/
+/********** Template CSS ************/
+
+
+.text-stroke-header {
+  -webkit-text-stroke: 3px #ffffff;
+  color: transparent;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.btn-social {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+
+
+
+/* ================ Navigation Menu ====================*/
+
+    
+
+.navbar-light {
+  display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 25px 10px;
+  color: #343a40;
+  font-weight: 500;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0BCEAF;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+
+/*===================== Hero section ======================*/
+/* @media (max-width: 992px){
+  .about-img img{
+      margin-top: 30px !important;
+      margin-left: 0px;
+  }
+} */
+
+
+
+#name{
+  font-size: 80px !important;
+}
+.about-img{
+ margin-left: -20px !important;
+ padding-left: 50px;
+ padding-right: 40px !important ;
+ right: 0px !important;
+ top: 0px;
+ z-index: 1;
+
+}
+.about-img img{
+  margin-bottom: 0px;
+  padding-left: 0px !important;
+  display: block;
+
+}
+.navbar-nav a{
+  display: block !important;
+}
+.navbar-nav button:hover{
+  color: rgb(237, 56, 134) !important;
+  /* color: white !important; */
+  z-index: 1;
+ 
+}
+
+.display-1{
+  font-size: 160px;
+  font-weight: 1000;
+  
+}
+ 
+.position-absolute{
+  font-weight: 700;
+  
+}
+
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.blue{
+ 
+  color: #ffffff;
+}
+.btn:hover{
+   background-color:#0077b6; 
+}
+.btn{
+  border: 2px solid rgb(6, 30, 74);
+} 
+.btn-white{
+  background-color: #023e8a;
+  border:2px solid #ffffff;
+/*  color: white;*/
+}
+.btn-blue{
+/*  border: 2.4px solid #ffffff;*/
+/*  color: #ffffff;*/
+}
+@media (max-width: 700px) {
+  .about-img{
+    margin-left: 20px;
+    right: 0px;
+    top: 30px;
+   }
+}
+
+/*front page buttons*/
+
+.blue{
+ 
+  color: #ffffff;
+}
+.btns:hover{
+   background-color:#0077b6; 
+}
+.btns{
+  border: 2px solid rgb(6, 30, 74);
+} 
+.btns-white{
+  background-color: #023e8a;
+  border:2px solid #ffffff;
+/*  color: white;*/
+}
+.btns-blue{
+/*  border: 2.4px solid #ffffff;*/
+/*  color: #ffffff;*/
+}
+/*===================== Adjsutment  ====================*/
+
+.extra1
+{
+  padding-top: 80px;
+
+}
+
+/*===================== Progress Bar ====================*/
+
+.progress {
+  border-radius: 10px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+
+/* =================== Quality ======================*/
+.ex-me{
+  margin-top: 35px;
+}
+
+
+/* =================== Service Section ==================*/
+.service-h4{
+  padding-bottom: 30px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+
+.service-box{
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.service-box:hover{
+  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+ 
+}
+/* =================== Portfolio section ==================*/
+
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+        
+}
+
+/* ====================== Testimonial ================*/
+.testimonial-carousel .text-center{
+  background-color: #eaecf0d0;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+.testimonial-carousel .text-center h4{
+
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: #0BCEAF;
+}
+
+
+
+/* ========================== Contact Us ========================*/
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*====================== Back to buttom ==================*/
+
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.gotobtn{
+       position:fixed;
+       width: 50px;
+       height: 50px;
+       background: rgb(51, 41, 166);
+       bottom: 40px;
+       right: 50px;
+       text-decoration: none;
+       text-align: center;
+       line-height: 50px;
+       color: white;
+       font-size: 22px;
+        z-index: 1;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+#body{
+	display: flex;
+	/* background:; */
+	/* min-height: 100vh; */
+	align-items: center;
+	justify-content: center;
+}
+
+#con{
+	position: relative;
+}
+#con h2 {
+	color: #fff;
+	font-size: 6em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+#con h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px white;
+}
+
+#con h2:nth-child(2) {
+	color: #90d715;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+#a:hover{
+  background-color:#023e8a;
+}
+#b:hover{
+  background-color: blue;
+  border: 1px blue solid;
+}
+#c:hover{
+  background-color: skyblue;
+}
+#d:hover{
+  background-color:pink ;
+}
+
+
+  @media (max-width: 478px){
+    #myname{
+      font-size: 60px !important;
+
+    }
+  }
+  @keyframes flip{
+    0%{
+      transform: rotateX('-180');
+    }
+    100%{
+      transform: rotateX('180');
+    }
+  }
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="" class="text-light bg-dark" style=" background: rgb(2,0,36);
+background: linear-gradient(to right,rgb(1,1,25),rgb(1,1,30));">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <!-- Navbar Start -->
+    <nav id="raj" class="navbar navbar-expand-lg bg-black" style="z-index: 5; position:fixed; width:100%;">
+        <div class="container-fluid">
+          <button type="button" class="navbar-toggler text-light" style="margin-left: 85%;" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon "><i class="bi bi-list display-5" ></i></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="mynavbar"  >
+            <div class="navbar-nav">
+              <a href="#"><button class="btn btn  border-0 text-light " style="font-size: 20px; color:#ffffff!important; ">Home</button></a>
+              <a  href="#about" ><button class="btn btn  border-0 text-light " style="font-size: 20px; color:#ffffff!important;">About</button></a>
+              <a  href="#qualification" ><button class="btn btn  border-0 text-light " style="font-size: 20px; color:#ffffff!important;">Education</button></a>
+              <a  href="#skills" ><button class="btn btn  border-0 text-light " style="font-size: 20px; color:#ffffff!important;">Skills</button></a>
+              <a  href="#gallery" ><button class="btn btn  border-0 text-light " style="font-size: 20px;color:#ffffff !important;">Gallery</button></a>
+              <a  href="#contact" ><button class="btn btn  border-0 text-light " style="font-size: 20px; color:#ffffff!important;">Contact</button></a>
+            </div>      
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+ 
+
+    <!-- Header Start -->
+    <div class="container-fluid  d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh; background-image: url('g12.gif');">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3 " style="margin-left:55px;">Hello, my name</h3>
+                    <section id="body">
+                      <div class="content" id="con">
+                        <h2 id="myname">AMANRAJ</h2>
+                        <h2 style="color:white !important;" id="myname">AMANRAJ</h2>
+                      </div>
+                    </section>
+                  
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                       <a href="aman.jpg" class="btn blue btn-outline-primary mr-5" style="margin-left: 20px;">Resume</a>
+                    <a href="#about" class="btn btn-outline-primary " style="color:#ffffff;" >About Me</a>
+                        
+                    </div>
+                </div>
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-img" style="margin-top: -10%;"> -->
+                    <!-- <img src="p123.png" class="img-fluid mt-5" style="height: 500px; width: 500px;" > -->
+                    <!-- <img class="img-fluid w-50 shadow-sm " src="1.jpg"  alt="" style="height: 100% !important; width:50%;"> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <!-- <div id="about" style="border: 2px solid transparent; height: 90px;">
+
+    </div> -->
+    <div class="container-fluid " id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center mt-2 justify-content-center">
+                <h1 class="position text-uppercase mt-5 display-3 fw-bold mb-5" style="color:#ffffff !important" data-aos="fade-up">About</h1>
+            </div>
+            <div class="row align-items-center" >
+                <div class="col-lg-5 pb-4 pb-lg-0 extra1">
+                    <img class="img-fluid rounded w-100 mt-1" id="flip-flop" src="27.jpg" alt="" style=" margin-top: -80px !important; height:80%  !important;"  data-aos="fade-right">
+                </div>
+                <div class="col-lg-7 " >
+                    <h3 class="mb-1" style="color:white !important; ">I Am Aman Raj & I want to become fullstack Developer</h3>
+                    <p style="font-size: 0.8rem; justify-content: space-between; color:white !important;"><b>HELLO...</b>  I am <b>Aman Raj</b>, I have a calm & composed personality. I have completed my higher schooling from RBSE Board . So, I am doing bachelor's Of Computer Application <b>(BCA)</b> from  Star Infotech college Ajmer. 
+                        <br/>I like to work in challenging environment demanding all my skills and efforts to explore
+                        and adapt my self in different fields and realise my potential where I get the possibility for continuous learning</p>
+                    <div class="row mb-3 " >
+                        <div class="col-sm-6 py-2"><h6 style="color: white !important;">Name: <span style="color:#023e8a; font-size:20px; ;color:white;">Aman Raj</span></h6></div>
+                       <div class="col-sm-6 py-2"><h6 style="color: white !important;">DOB: <span style="color:#023e8a; font-size:20px;color:white;">16 November 2005</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: white !important;">Phone: <span style="color:#023e8a; font-size:20px;color:white;">+91 7240719543</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6 style="color: white !important;">Email: <span style="color:#023e8a; font-size:20px;color:white;">Amanraj75872@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: white !important;">Country: <span style="color:#023e8a; font-size:20px;color:white;">India</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: white !important;">language: <span style="color:#023e8a;font-size:20px; color:white;">English, Hindi</span></h6></div>
+                    </div>
+                    <a href="about" class="btn blue btn-outline-primary mr-4">Hire Me</a>
+                    <a href="#qualification" class="btn btn-outline-primary" style="color:#ffffff;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid " id="qualification">
+        <div class="container" style=" padding-top: 8%;" >
+            <div class="position-relative d-flex align-items-center justify-content-center">
+               <h1 class="position-absolute text-uppercase text-primary  display-4 fw-bold mb-1" style="color:white !important;"  data-aos="fade-up">Education</h1>
+            </div>
+            <div class="row mt-5 align-items-center"  data-aos="fade-up">
+                <div class="col-lg-6" >
+                    <h3 class="mb-4"  style="color: white !important;" >My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1"  style="color: white !important;">Bachelor of Computer Application</h5>
+                            <p class="mb-2"  style="color: white !important;"><strong>M.D.S.U University</strong> | <small>2023-2026</small></p>
+                            <p  style="color: white !important;">I completed my Bca for <br/>
+                              Star Infotech college</p>
+                        </div>
+                        <br/>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1"   style="color: white !important;"  >High school</h5>
+                            <p class="mb-2"  style="color: white !important;" ><strong>CBSE Board</strong> | <small>2020 - 2021</small></p>
+                            <p  style="color: white !important;">Gov.sr.sec.school Bhrtapur(Bayana) (Raj.)<br/>
+                                12th (RBSC)</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        
+                      <div class="position-relative ex-me mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                        <h5 class="font-weight-bold mb-1"  style="color: white !important;" >Schooling</h5>
+                        <p class="mb-2"  style="color: white !important;" ><strong>CBSE Board</strong> | <small>2019 - 2020</small></p>
+                        <p  style="color: white !important;">A.V.M School, Bhrtapur(Bayana) (Raj.)<br/>
+                            10th (RBSC)</p>
+                    </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1"  style="color: white !important;" >Web Development</h5>
+                            <p class="mb-2"  style="color: white !important;" ><strong>HTML, C-lang, JS</strong> | <small> Good</small></p>
+                            <p  style="color: white !important;">Developers build web pages and applications for either the Intranet, a private network, or the Internet. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skills">
+        <div class="container" style=" padding-top: 8%;">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="position-absolute text-uppercase text-primary  display-3 fw-bold mb-5" style="color: white !important;"  data-aos="fade-up">Skills</h1>
+            </div>
+            <div class="row mt-5" >
+              <div class="col-lg-6"  data-aos="fade-up">
+                <div class="text-primary progresst"  style="color: white !important;">HTML<div class="text-light float-end">80%</div></div> 
+                <div class="progress"style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated bg-primary" style="width:80%; background:#023e8a !important;"></div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6"  data-aos="fade-up">
+                <div class="text-primary  progresst"  style="color: white !important;">CSS<div class="text-light float-end">75%</div></div>
+                <div class="progress" style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated" style="width:75% ;  background:#023e8a !important;"></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row mt-5 ">
+              <div class="col-lg-6"   data-aos="fade-up">
+                <div class="text-primary  progresst"  style="color: white !important;">Bootstrap<div class="text-light float-end">40%</div></div> 
+                <div class="progress"style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated" style="width:40%;   background:#023e8a !important;"></div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6"   data-aos="fade-up">
+                <div class="text-primary  progresst"  style="color: white !important;">Java-Script<div class="text-light float-end">15%</div></div>
+                <div class="progress" style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated" style="width:15%;   background: #023e8a !important;"></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-6"   data-aos="fade-up">
+                <div class="text-primary  progresst"  style="color: white !important;">C-Programing<div class="text-light float-end">60%</div></div> <div class="progress" style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated" style="width:60%;   background:#023e8a !important;"></div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="text-primary progresst"  style="color: white !important;">Adv-Basic<div class="text-light float-end" >60%</div></div>
+                <div class="progress" style="height:20px; ">
+                  <div class="progress-bar progresss progress-bar-striped progress-bar-animated" style="width:60%;   background:#023e8a !important;"></div>
+                </div>
+              </div>
+             
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <div class="container-fluid pt-5 mt-5 pb-3" id="gallery">
+        <div class="container"style=" padding-top: 8%;">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="position-absolute text-uppercase text-primary display-4 fw-bold mb-5" style="color:white !important;" data-aos="fade-up">Gallery</h1>
+
+            </div>
+                </div>
+            </div>
+            <html>
+    <head>
+        <title>port</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="port.css">
+    
+</head>
+    
+    <body data-aos="fade-up">
+      <section  data-aos="fade-up"
+      data-aos-duration="1000">
+          <ul class="text-dark" data-aos="fade-up">
+              <li class="list active  " data-filter="all" style="background-color: #023e8a !important;border-radius: 40px;"> All</li>
+              <li  class="list " data-filter="riding" style="background-color: #023e8a !important;border-radius: 40px;">Riding</li>
+              <li  class="list  " data-filter="travel" style="background-color: #023e8a !important;border-radius: 40px;">Travel</li>
+              <li  class="list  " data-filter="craze" style="background-color: #023e8a !important; border-radius: 40px;">Craze</li>
+              
+          </ul>
+          <div class="product mt-5"   data-aos="fade-up">
+                  <div class="itemBox" data-item="craze"><img src="28.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="all"><img src="9.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="riding"><img src="25.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="craze"><img src="36.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="travel"><img src="34.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="riding"><img src="18.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="riding"><img src="14.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="craze"><img src="32.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="travel"><img src="27.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  <div class="itemBox" data-item="riding"><img src="35.jpg" class="img-fluid" data-aos="flip-left" ></div>
+                  
+          </div>
+      </section>
+    </body>
+        <script>
+            let list = document.querySelectorAll('.list');
+            let itemBox = document.querySelectorAll('.itemBox');            
+            for(let i = 0; i<list.length; i++){
+                list[i].addEventListener('click',function(){                        
+                        for(let j = 0; j<list.length; j++){
+                            list[j].classList.remove('active');
+                        }
+                        this.classList.add('active');
+                        
+                        let dataFilter = this.getAttribute('data-filter');
+                        
+                        for(let k = 0; k<itemBox.length; k++){
+                            itemBox[k].classList.remove('active');
+                            itemBox[k].classList.add('hide');
+                            
+                            if(itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                                
+                                itemBox[k].classList.remove('hide');
+                                itemBox[k].classList.add('active');
+                            }
+                        }
+                    })
+            }
+
+
+
+             
+        </script>
+</html>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container" style=" padding-top: 8%;">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+               <h1 class="position-absolute text-uppercase text-primary display-3 fw-bold mb-5" style="color:white !important;" data-aos="fade-up">Contact</h1>
+            </div>
+                <div class="row mt-5" style="padding-top: 50px;">
+                    <div class="row justify-content-center col-lg-6">
+                      <div class="col-lg-12">
+                        <h3  style="color: white !important;"> Plot no. 5, Gali no. 4</h3>
+                        <p  style="color: white !important;">Neharu Nagar, madhar, Ajmer</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h3  style="color: white !important;">+91 7240719543</h3>
+                        <p  style="color: white !important;">Whatsapp no.</p>
+                      </div>
+                      <div class="col-lg-12">
+                        <h3  style="color: white !important;">Amanraj75872@gmail.com</h3>
+                        <p  style="color: white !important;">Email Id </p>
+                      </div>
+                    </div>
+        
+                    <div class="row justify-content-center col-lg-6" style="padding-top: 40px;  background-image: url('gif.gif');">
+                        <div class="col-lg-12">
+                            <div class="contact-form text-center">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="form-row">
+                                        <div class="control-group col-sm-6">
+                                            <input type="text" class="form-control p-4 rounded-0" id="name1" placeholder="Your Name"
+                                                required="required" data-validation-required-message="Please enter your name" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group col-sm-6">
+                                            <input type="email" class="form-control p-4 rounded-0" id="email" placeholder="Your Email"
+                                                required="required" data-validation-required-message="Please enter your email" />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control py-3 px-4 rounded-0" rows="5" id="message" placeholder="Message"rquired="required"data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary mb-3" type="submit" id="sendMessageButton" style=" background-color:#023e8a;">Send
+                                            Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5" style=" background: rgb(2,0,36);
+background: linear-gradient(to right,rgb(1,1,25),rgb(1,1,30));">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4" id="iconlast">
+                <a href=""><i class="fab fa-twitter" id="a"></i></a>
+                <a href=""><i class="fab fa-facebook-f" id="b"></i></a>
+                <a href=""><i class="fab fa-linkedin-in" id="c"></i></a>
+                <a href="https://www.instagram.com/aman._.16_?igsh=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram" id="d"></i></a>
+            </div>
+            <!-- <i class="bi bi-c-circle"> -->
+            <p class="m-0" style="color: #ffffff !important;">&copy; <a class="text-white font-weight-bold" href="#">Copy Right</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#"><h4>AmanRaj Sain</h4></a>
+            </p>
+        <!-- </i> -->
+        </div>
+    </div>
+
+
+  
+    <script>
+      AOS.init( {
+        offset: 120,
+        duration: 1000,
+      });
+
+      
+    </script>
+
+    
+</body>
+
+</html>
